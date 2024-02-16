@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+/* navbar*/
+
+#navbar {
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+#logo {
+  margin: 5px 5px;
+}
+#logo img {
+  margin: 7px 19px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+#navbar::before {
+  content: "";
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.5;
+}
+#navbar ul {
+  display: flex;
+}
+
+#navbar ul li {
+  list-style: none;
+  font-size: 1.1rem;
+  font-family: "Bree Serif", serif;
+}
+#navbar ul li a {
+  text-decoration: none;
+  display: block;
+  margin: 4px 7px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  color: white;
+}
+#navbar ul li a:hover {
+  color: black;
+  background-color: white;
+}
+
+/* home section*/
+#home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3px 200px;
+  height: 400px;
+  overflow: hidden;
+}
+#home::before {
+  content: "";
+  background: url("../img/mainBg.jpg") no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 470px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.9;
+}
+
+#home h1 {
+  color: white;
+  text-align: center;
+  font-family: "Bree Serif", serif;
+}
+
+#home p {
+  color: white;
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: "Bree Serif", serif;
+}
+
+/*services Section */
+#services-container
+{
+    background-color: rgb(87 94 82 / 17%);
+    overflow: hidden;
+}
+#services {
+  display: flex;
+  padding: 14px 8px;
+}
+#services .box {
+  border: 1px solid rgb(179 156 156);
+  background-color: #f3efe7;
+  margin: 7px 10px;
+  padding: 7px 10px;
+  border-radius: 23px;
+}
+#services .box img {
+  height: 150px;
+  padding: 4px;
+  display: block;
+  margin: auto;
+}
+#services .box p {
+  font-size: 1rem;
+  font-family: "Bree Serif", serif;
+  padding: 6px;
+}
+
+/* client-section*/
+
+#client-section
+{
+    height: 250px;
+    position: relative;
+    z-index: -2;
+}
+#client-section::before
+{
+  content: "";
+  background: url("../img/client.jpg") no-repeat center center/cover;
+  position: absolute;
+  height: 250px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+#clients
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item
+{
+    padding:15px;
+    margin: 10px;
+   
+}
+.client-item img
+{
+    height: 100px;
+}
+
+/* contact*/
+#contact
+{
+   position: relative;
+   height: 465px;
+   z-index: -2;
+}
+#contact::before
+{
+  content: "";
+  /*background: url("../img/contact-us.jpg") no-repeat center center/cover;*/
+  background-color: rgb(174, 199, 153);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.4;
+
+}
+#form-box label
+{
+    font-size: 1rem;
+    font-family: "Bree Serif", serif;
+    
+}
+#other-box
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#contact-box
+{
+    display:grid;
+    grid-template-columns: 3.5fr 1fr;
+    margin:0.9rem ;
+
+}
+#contact-box input,textarea
+{
+    width: 100%;
+    padding: 0.3rem;
+    margin: 0.3rem 0rem;
+}
+#form-group-btn
+{
+    width: 48%;
+}
+.contact-image
+{
+    height: 70px;
+    margin: 0.4rem;
+    cursor: pointer;
+}
+.contact-item
+{
+    display: flex;
+    flex-direction: column;
+    padding: 0.6rem;
+}
+
+
+/*footer*/
+footer
+{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    background-color: black;
+    padding: 0.4rem;
+}
+ 
+/* utitlity classes*/
+.h-primary {
+  font-size: 2.5rem;
+  padding: 12px;
+  font-family: "Bree Serif", serif;
+}
+.h-secondary {
+  font-size: 1.5rem;
+  padding: 12px;
+  font-family: "Bree Serif", serif;
+}
+.center {
+  text-align: center;
+}
+
+.btn {
+  padding: 6px 10px;
+  margin: 15px 4px;
+  color: white;
+  background-color: rgb(122, 98, 98);
+  cursor: pointer;
+  font-size: 1.2rem;
+  border: 1px solid white;
+  border-radius: 8px;
+}
+.btn:hover {
+  background-color: rgb(65, 38, 38);
+}

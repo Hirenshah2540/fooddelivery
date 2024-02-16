@@ -1,0 +1,2 @@
+for css: background: url("../img/mainBg.jpg") no-repeat center center/cover;
+for html: <img src="./img/logo.jpg" alt="not found" srcset="" />

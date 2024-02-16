@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym</title>
+    <link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Day 4/Gym.css">
+    <style>
+        body {
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url("./img/boy.jpg");
+
+        }
+        .header
+        {
+            background-color:rgb(25 18 29 / 1%);
+        }
+
+        .left {
+            display: inline-block;
+           /* border: 2px solid gold;*/
+            position: absolute;
+            top: 20px;
+            left: 34px;
+            /*  float: left;
+            margin-left: 34px; other css for t*/
+        }
+        .left img
+        {
+            width: 75px;
+        }
+        .left div
+        {
+            text-align: center;
+            font-size: 18px;
+            font-family: 'Grape Nuts', cursive;
+            
+        }
+
+        .mid {
+            width: 50%;
+            /* border: 2px solid gold;*/
+            display: block;
+            margin: 20px auto;
+        }
+
+        .right {
+            display: inline-block;
+            /* border: 2px solid gold;*/
+            position: absolute;
+            top: 20px;
+            right: 34px;
+        }
+        .navbar
+        {
+            display: inline-block;
+        }
+        .navbar li
+        {
+            display: inline-block;
+            font-size: 18px;
+        }
+        .navbar li a
+        {
+            text-decoration: none;
+            padding: 34px 23px;
+            color:white;
+            font-weight:bold;
+        }
+        .navbar li a:hover, .navbar li a.active
+        {
+            text-decoration:underline;
+            color: black;
+
+        }
+        .btn {
+            margin: 10px 5px;
+            padding: 6px 12px;
+            cursor: pointer;
+            background-color: black;
+            border: 1px solid black;
+            border-radius: 22px;
+            color: white;
+            font-family: 'Hind Siliguri', sans-serif;
+        }
+        .btn:hover
+        {
+           
+            background-color:rgb(32, 29, 29);
+        }
+        .container
+        {
+           border: 2px solid gray;
+           margin: 75px 30px;
+           padding: 60px 60px ;
+           width: 33%;
+           color:white;
+           border-radius: 10px;
+        }
+        .form-group input
+        {
+            text-align: center;
+            display: block;
+            width: 342px;
+            border: 1px solid black;
+            margin: 4px auto;
+            padding: 8px 4px;
+            border-radius: 8px;
+            font-size: 17px;
+            font-family:'Times New Roman', Times, serif;
+        }
+        .container h2
+        {
+            text-align: center;
+        }
+        .container .btn
+        {
+            text-align: center;
+            display: block;
+            width: 78%;
+            margin: 12px auto;
+            padding: 7px;
+            font-size: 17px;
+            border-radius: 8px;
+            font-family:'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="./img/logo1.jpg" alt="" >
+            <div>Hero Fitness</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About </a></li>
+                <li><a href="#">Fitness Center</a></li>
+                <li><a href="#">Contact us</a></li>
+
+
+            </ul>
+
+        </div>
+        <div class="right">
+            <button class="btn">Call us</button>
+            <button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h2>Join the best Gym </h2>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" id="name"  placeholder="Enter the Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" id="email"  placeholder="Enter the Email">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" id="Locality"  placeholder="Enter the Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" id="Contact"  placeholder="Enter the Contact details">
+            </div>
+            <button type="submit" class="btn">Submit</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
